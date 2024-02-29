@@ -21,6 +21,8 @@ chrome-profiler-events*.json
 *.launch
 .settings/
 *.sublime-workspace
+package-lock.json
+node_modules
 
 # IDE - VSCode
 .vscode/*
