@@ -1,0 +1,13 @@
+<div class="container-lg">
+  <div class="content-wrapper">
+    <h1 class="app-title">RecipeLib</h1>
+    <div class="form-wrapper">
+        <div class="form-group">
+          <input class="form-control" [(ngModel)]="searchQuery" placeholder="Search for a recipe...">
+        </div>
+        <div class="button-wrapper">
+          <button type="submit" class="btn btn-light" (click)="searchRecipes()">Search</button>
+        </div>
+    </div>
+  </div>
+</div>

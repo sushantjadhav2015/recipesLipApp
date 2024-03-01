@@ -1,0 +1,31 @@
+<!-- <div class="container-lg">
+    <div class="row">
+      <div class="col-md-4" *ngFor="let recipe of recipes">
+        <div class="card mb-4">
+          <div class="card-body">
+            <img [src]="recipe.image" class="card-img" alt="{{ recipe.title }}">
+            <h5 class="card-title">{{ recipe.title }}</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+   -->
+   <h1 class="list-title text-center">Showing Result of {{ searchText }}</h1>
+   <div class="container-lg">
+    <div class="row">
+      <div class="col-md-4" *ngFor="let recipe of recipes">
+        <div class="card mb-4" (click)="showDetails(recipe.id)">
+          <div class="card-body">
+            <div class="card-img-container">
+              <img [src]="recipe.image" class="card-img" alt="{{ recipe.title }}">
+            </div>
+            <div class="card-content">
+              <h5 class="card-title">{{ recipe.title }}</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  

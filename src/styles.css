@@ -1,1 +1,87 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.container-lg {
+  height: 100vh;
+  background-image: url("https://t3.ftcdn.net/jpg/06/72/45/24/360_F_672452471_4kHMWT93ipMIvpg862kRS3FlwvMKg8nS.jpg");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-wrapper {
+  text-align: center;
+}
+.app-title {
+  font-size: 50px;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.form-wrapper {
+  margin-top: 20px;
+}
+
+.container-lg input.form-control {
+    width: 500px;
+    padding: 15px;
+    border-radius: 30px;
+}
+
+.container-lg button.btn {
+    padding: 10px 20px; 
+    border-radius: 20px;
+    border: none;
+    width: 200px
+}
+
+.button-wrapper {
+  margin-top: 20px;
+}
+
+/* .card {
+    display: flex;
+    margin-top: 10px;
+    background-color: white;
+  }
+  
+  .card-body {
+    display: flex;
+    align-items: center;
+  }
+
+  .card-img {
+    max-width: 50%;
+    height: auto;
+  } */
+
+  .card {
+    display: flex;
+    margin-top: 10px;
+    background-color: white;
+  }
+  
+  .card-body {
+    display: flex;
+    align-items: center;
+  }
+  
+  .card-img-container {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .card-img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .card-content {
+    flex-grow: 1;
+    text-align: center;
+  }
+  
