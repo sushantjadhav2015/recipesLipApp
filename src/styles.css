@@ -26,62 +26,80 @@ body {
 }
 
 .container-lg input.form-control {
-    width: 500px;
-    padding: 15px;
-    border-radius: 30px;
+  width: 500px;
+  padding: 15px;
+  border-radius: 30px;
 }
 
 .container-lg button.btn {
-    padding: 10px 20px; 
-    border-radius: 20px;
-    border: none;
-    width: 200px
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: none;
+  width: 200px;
 }
 
 .button-wrapper {
   margin-top: 20px;
 }
 
-/* .card {
-    display: flex;
-    margin-top: 10px;
-    background-color: white;
-  }
-  
-  .card-body {
-    display: flex;
-    align-items: center;
-  }
+.card {
+  display: flex;
+  margin-top: 10px;
+  background-color: white;
+}
 
-  .card-img {
-    max-width: 50%;
-    height: auto;
-  } */
+.card-body {
+  display: flex;
+  align-items: center;
+}
 
-  .card {
-    display: flex;
-    margin-top: 10px;
-    background-color: white;
-  }
-  
-  .card-body {
-    display: flex;
-    align-items: center;
-  }
-  
-  .card-img-container {
-    width: 50%;
-    display: flex;
-    justify-content: center;
-  }
-  
-  .card-img {
-    max-width: 100%;
-    height: auto;
-  }
-  
-  .card-content {
-    flex-grow: 1;
-    text-align: center;
-  }
-  
+.card-img-container {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.card-img {
+  max-width: 100%;
+  height: auto;
+}
+
+.card-content {
+  flex-grow: 1;
+  text-align: center;
+}
+
+.list-title {
+  text-align: center;
+  color: white;
+}
+
+.container-lg-details {
+  height: 100lvh;
+  background-image: url("https://t3.ftcdn.net/jpg/02/51/65/04/360_F_251650483_LKeOL11OfEcCgzKhn0U2VHCAePkPt8D5.jpg");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+}
+
+.sub-title{
+  text-align: center;
+  color: white;
+  font-size: medium;
+}
+
+.ingredients-container,
+.steps-container {
+  background-color: none;
+}
+
+.ingredients-list,
+.steps-list {
+  color: aliceblue;
+  padding: 0;
+}
+
+.ingredient,
+.step {
+  margin: 0;
+}

@@ -1,38 +1,19 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { ApiService } from 'src/app/service/api.service';
 
 @Component({
   selector: 'app-recipes-list-page',
-  templateUrl: './recipes-list-page.component.html',
-  styleUrls: ['./recipes-list-page.component.css'],
+  templateUrl: './recipes-list-page.component.html'
 })
 export class RecipesListPageComponent implements OnInit {
-  recipes: any[] = [
-    {
-      id: 654534,
-      title: 'Paneer Makhani',
-      image: 'https://spoonacular.com/recipeImages/654534-312x231.jpg',
-      imageType: 'jpg',
-    },
-    {
-      id: 654532,
-      title: 'Paneer jalfrezi',
-      image: 'https://spoonacular.com/recipeImages/654532-312x231.jpg',
-      imageType: 'jpg',
-    },
-    {
-      id: 654523,
-      title: 'Paneer & Fig Pizza',
-      image: 'https://spoonacular.com/recipeImages/654523-312x231.jpg',
-      imageType: 'jpg',
-    }
-  ];
+  recipes: any[] = [];
 
   searchText!: string
   constructor(
     private route: ActivatedRoute,
-    private recipeService: ApiService
+    private recipeService: ApiService,
+    private router: Router
   ) {}
 
   ngOnInit() {
@@ -40,16 +21,14 @@ export class RecipesListPageComponent implements OnInit {
       const query = params['query'];
       this.searchText = query
       if (query) {
-        console.log('data coming in list page', query);
-
-        // this.recipeService.getListOfRecipes(query).subscribe((data: any) => {
-        //   this.recipes = data.results;
-        // });
+        this.recipeService.getListOfRecipes(query).subscribe((data: any) => {
+          this.recipes = data.results;
+        });
       }
     });
   }
 
   showDetails(id: number): void {
-    alert(id)
+    this.router.navigate([`details/${id}`])
   }
 }

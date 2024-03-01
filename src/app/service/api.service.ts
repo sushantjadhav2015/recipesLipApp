@@ -18,4 +18,13 @@ export class ApiService {
       number: 2
     }
     return this.http.get(`${this.baseUrl}/complexSearch`, { params: data });
-  }}
+  }
+
+  getDetailsOfRecipes(id: number){
+    const data = {
+      apiKey: '661555ac9e86413fa6dcca528053382d',
+    }
+    return this.http.get(`${this.baseUrl}/${id}/information`, { params: data });
+  }
+
+}

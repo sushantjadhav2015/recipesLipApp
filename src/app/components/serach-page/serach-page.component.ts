@@ -3,8 +3,7 @@ import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-serach-page',
-  templateUrl: './serach-page.component.html',
-  styleUrls: ['./serach-page.component.css']
+  templateUrl: './serach-page.component.html'
 })
 export class SerachPageComponent implements OnInit {
 
